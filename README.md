@@ -1,4 +1,6 @@
 # 21点游戏插件
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fxiaomizhoubaobei%2Fastrbot_plugin_blackjack.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fxiaomizhoubaobei%2Fastrbot_plugin_blackjack?ref=badge_shield)
+
 
 一个基于AstrBot框架的21点游戏插件，支持PVE和PVP模式，具有完整的赌场级21点规则。
 
@@ -62,3 +64,6 @@
 ## 许可证
 
 GNU AFFERO GENERAL PUBLIC LICENSE Version 3 (AGPL-3.0)
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fxiaomizhoubaobei%2Fastrbot_plugin_blackjack.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fxiaomizhoubaobei%2Fastrbot_plugin_blackjack?ref=badge_large)
