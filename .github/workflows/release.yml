@@ -43,10 +43,12 @@ jobs:
       - name: 获取版本
         id: get_version
         run: |
-          # 从 metadata.yaml 文件中读取版本号
+          # 从 metadata.yaml 文件中读取版本号，并移除可能存在的 'v' 前缀
           VERSION=$(grep "^version:" metadata.yaml | awk '{print $2}')
+          # 移除可能存在的 'v' 前缀以避免重复
+          VERSION=${VERSION#v}
           echo "version=$VERSION" >> $GITHUB_OUTPUT
-          echo "tag_name=$VERSION" >> $GITHUB_OUTPUT
+          echo "tag_name=v$VERSION" >> $GITHUB_OUTPUT
 
       # 4. 安装依赖
       - name: 安装依赖
