@@ -29,13 +29,13 @@ jobs:
 
       # 1. 检出代码
       - name: Checkout code
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           fetch-depth: 0  # 获取完整的 git 历史
 
       # 2. 设置 Python 环境
       - name: Set up Python
-        uses: actions/setup-python@7f4fc3e22c37d6ff65e88745f38bd3157c663f7c # v4.9.1
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
         with:
           python-version: '3.12'
 
@@ -56,26 +56,26 @@ jobs:
       # 5. 创建插件目录
       - name: Create plugin directory
         run: |
-          mkdir -p astrbot_plugin_beta_dxl_bert_vits
+          mkdir -p astrbot_plugin_manosaba-memes
 
       # 6. 复制插件文件到构建目录
       - name: Copy plugin files
         run: |
           # 复制主程序文件
-          cp main.py astrbot_plugin_beta_dxl_bert_vits/
+          cp main.py astrbot_plugin_manosaba-memes/
           # 复制配置文件和依赖文件
-          cp metadata.yaml requirements.txt astrbot_plugin_beta_dxl_bert_vits/ || true
+          cp metadata.yaml requirements.txt astrbot_plugin_manosaba-memes/ || true
           # 复制所有处理器文件
-          cp *_handler.py command_utils.py astrbot_plugin_beta_dxl_bert_vits/ || true
+          cp *_handler.py command_utils.py astrbot_plugin_manosaba-memes/ || true
           # 复制 logo 文件
-          cp logo.png astrbot_plugin_beta_dxl_bert_vits/ || true
+          cp logo.png astrbot_plugin_manosaba-memes/ || true
           # 复制子目录
-          cp -r assets astrbot_plugin_beta_dxl_bert_vits/ || true
+          cp -r baidu astrbot_plugin_manosaba-memes/ || true
 
       # 7. 打包为 zip 文件
       - name: Create zip package
         run: |
-          zip -r astrbot_plugin_beta_dxl_bert_vits.zip astrbot_plugin_beta_dxl_bert_vits/
+          zip -r astrbot_plugin_manosaba-memes.zip astrbot_plugin_manosaba-memes/
 
       # 8. 生成 Release Notes
       - name: Generate Release Notes
@@ -203,7 +203,7 @@ jobs:
           fi
 
           # 添加发布说明
-          RELEASE_FOOTER="\n\n---\n\n### 📥 安装方法\n\n\`\`\`bash\n# 下载插件包后，将其放入 AstrBot 的 plugins 目录\ncp astrbot_plugin_manosaba-memes-*.zip ~/.astrbot/plugins/\n\`\`\`\n\n### 🔧 配置\n\n无需额外配置，插件加载后会自动创建配置目录。"
+          RELEASE_FOOTER="\n\n---\n\n### 📥 安装方法\n\n\`\`\`bash\n# 下载插件包后，将其放入 AstrBot 的 plugins 目录\n"
           
           NOTES="${NOTES}${RELEASE_FOOTER}"
 
@@ -239,7 +239,7 @@ jobs:
 
             本 Release 包含以下文件：
 
-            - **astrbot_plugin_beta_dxl_bert_vits-*.zip**: 插件安装包
+            - **astrbot_plugin_manosaba-memes-*.zip**: 插件安装包
             - **evidence-bundle.tar.gz**: CI 证据包（包含源代码、Git 元数据、依赖项、SBOM 等）
             - **evidence-bundle.tar.gz.sig**: 证据包的 Sigstore 签名
             - **evidence-bundle.tar.gz.crt**: 证据包的签名证书
@@ -252,7 +252,7 @@ jobs:
           draft: false
           prerelease: false
           files: |
-            astrbot_plugin_beta_dxl_bert_vits.zip
+            astrbot_plugin_manosaba-memes.zip
             _evidence_dist/*.tar.gz
             _evidence_dist/*.sig
             _evidence_dist/*.crt
