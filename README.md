@@ -1,5 +1,19 @@
 # 21点游戏插件
 
+[![GitHub Repo stars](https://img.shields.io/github/stars/xiaomizhoubaobei/astrbot_plugin_blackjack)](https://github.com/xiaomizhoubaobei/astrbot_plugin_blackjack)
+[![GitHub forks](https://img.shields.io/github/forks/xiaomizhoubaobei/astrbot_plugin_blackjack)](https://github.com/xiaomizhoubaobei/astrbot_plugin_blackjack)
+[![GitHub watchers](https://img.shields.io/github/watchers/xiaomizhoubaobei/astrbot_plugin_blackjack)](https://github.com/xiaomizhoubaobei/astrbot_plugin_blackjack)
+[![GitHub issues](https://img.shields.io/github/issues/xiaomizhoubaobei/astrbot_plugin_blackjack)](https://github.com/xiaomizhoubaobei/astrbot_plugin_blackjack/issues)
+[![GitHub license](https://img.shields.io/github/license/xiaomizhoubaobei/astrbot_plugin_blackjack)](https://github.com/xiaomizhoubaobei/astrbot_plugin_blackjack/blob/main/LICENSE)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/xiaomizhoubaobei/astrbot_plugin_blackjack)](https://github.com/xiaomizhoubaobei/astrbot_plugin_blackjack/releases)
+[![Commit Activity](https://img.shields.io/github/commit-activity/w/xiaomizhoubaobei/astrbot_plugin_blackjack)](https://github.com/xiaomizhoubaobei/astrbot_plugin_blackjack)
+[![GitHub last commit](https://img.shields.io/github/last-commit/xiaomizhoubaobei/astrbot_plugin_blackjack)](https://github.com/xiaomizhoubaobei/astrbot_plugin_blackjack)
+[![GitHub contributors](https://img.shields.io/github/contributors/xiaomizhoubaobei/astrbot_plugin_blackjack)](https://github.com/xiaomizhoubaobei/astrbot_plugin_blackjack)
+![Python Version](https://img.shields.io/badge/Python-3.12+-blue.svg)
+![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+![Status](https://img.shields.io/badge/status-active-success.svg)
+![Repo Size](https://img.shields.io/github/repo-size/xiaomizhoubaobei/astrbot_plugin_blackjack.svg)
+
 一个基于AstrBot框架的21点游戏插件，支持PVE和PVP模式，具有完整的赌场级21点规则。
 
 ## 功能特性
