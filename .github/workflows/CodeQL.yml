@@ -34,7 +34,7 @@ jobs:
 
     steps:
     - name: 加固运行器（审计所有出站调用）
-      uses: step-security/harden-runner@e3f713f2d8f53843e71c69a996d56f51aa9adfb9
+      uses: step-security/harden-runner@58077d3c7e43986b6b15fba718e8ea69e387dfcc
       with:
         egress-policy: audit
 
